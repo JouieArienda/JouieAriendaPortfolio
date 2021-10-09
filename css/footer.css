@@ -1,0 +1,139 @@
+footer {
+  height: auto;
+  width: 100%;
+  background: #181818;
+  overflow: hidden;
+  font-size: 0.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer > .contact {
+  min-width: 60%;
+  height: auto;
+  margin: 0.3rem 0 0.3rem 0;
+}
+.contact svg {
+  width: 2rem;
+}
+.contact p {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  color: rgb(165, 165, 165);
+  text-align: center;
+}
+footer > .contact:nth-child(1) {
+  border-bottom: 2px solid rgb(29, 29, 29);
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact:nth-child(1) .personal-data {
+  min-width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact:nth-child(1) .icon {
+  background: rgb(151, 65, 250);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .contact:nth-child(2) {
+  max-width: 60%;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+.contact:nth-child(2) .web-info {
+  max-height: 20vh;
+  padding-left: 2rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact:nth-child(2) .web-info > h5 {
+  font-size: 1rem;
+}
+.contact:nth-child(2) .web-info > a {
+  text-decoration: none;
+  font-size: 0.6rem;
+  padding: 0.2rem 0 0.2rem 0;
+  color: #9f50f8;
+}
+.contact:nth-child(2) .web-info > a:hover {
+  color: #bdbdbd;
+  transition: 0.5s;
+}
+.contact:nth-child(2) .web-info input {
+  width: 25vh;
+}
+
+footer > .contact:nth-child(3) {
+  width: 100%;
+  height: auto;
+  background: rgb(43, 43, 43);
+  padding: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact:nth-child(3) .social-media {
+  width: 30%;
+  max-height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact:nth-child(3) .social-media ul {
+  min-width: 33.3%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.contact:nth-child(3) .social-media ul li {
+  list-style: none;
+}
+.contact:nth-child(3) .social-media ul li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #424242;
+  font-weight: bold;
+}
+.contact:nth-child(3) .social-media ul li a:hover {
+  color: rgb(151, 65, 250);
+  transition: 0.5s;
+}
+
+@media (max-width: 767.98px) {
+  footer > .contact:nth-child(2) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact:nth-child(2) .web-info {
+    padding-left: 0;
+    width: 50%;
+    margin-top: 2rem 0 2rem 0;
+
+    display: flex;
+  }
+  .contact:nth-child(3) .social-media li {
+    margin-left: 0.5rem;
+  }
+}

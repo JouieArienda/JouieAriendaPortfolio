@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap");
+
+section.about {
+  max-width: 100%;
+  min-height: 200vh;
+  padding: 6px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section.about .header {
+  min-width: 80%;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: -120px;
+}
+.about h1 {
+  text-transform: uppercase;
+  font-size: 6em;
+}
+.about h1 span {
+  color: rgb(151, 65, 250);
+}
+.about .about-content {
+  width: 90%;
+  height: auto;
+  /* background: cornflowerblue; */
+
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-content .about-info {
+  width: 45%;
+  height: 500px;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about .about-content .about-info p {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.about .about-content .about-info a.button {
+  text-decoration: none;
+  margin-top: 50px;
+  padding: 10px 15px;
+  background: rgb(151, 65, 250);
+  transition: 0.5s;
+  border-radius: 2%;
+}
+.about .about-content .about-info a.button:hover {
+  background: rgb(151, 65, 250);
+  transition: 0.5s;
+}
+.about .about-content .image {
+  width: 45%;
+  height: 500px;
+  /* background: aqua; */
+
+  display: flex;
+  justify-content: center;
+}
+.about .about-content .image img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+@media (max-width: 767.98px) {
+  .about .about-content {
+    width: 100%;
+    height: auto;
+    /* background: cornflowerblue; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  section.about .header {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .about h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+  }
+  .about .about-content .image {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .about-content .about-info {
+    min-width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 595.98px) {
+  section.about .header {
+    margin-top: 100px;
+  }
+  .about h1 {
+    text-align:center;
+    font-size: 4rem;
+  }
+}

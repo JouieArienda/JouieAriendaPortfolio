@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap");
+    *{
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+        font-family: 'Poppins',sans-serif;
+        font-size: 62.5%;
+    }
+    main{
+        width: 100%;
+        height: 100vh;
+        background: rgb(227, 184, 252);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me{
+        width: 50%;
+        padding: 2rem;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-me h1{
+        font-size: 5rem;
+        text-transform: uppercase;
+        color: rgb(37, 37, 37);
+    }
+    .about-me img{
+        border-radius: 50%;
+    }
+    .about-me p{
+        color: rgb(49, 49, 49);
+        font-size: 1rem;
+    }
+    @media (max-width:575.98px){
+        .about-me h1{
+        font-size: 4rem;
+        }
+        .about-me{
+        width: 60%;
+    }
+    }
+</style>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div class="about-me">
+            <img src="../assets/potato.gif" alt="" width="300px">
+            <h1>About me</h1>
+            <p>
+                I'm Arienda Jouie D. I'm studying at Technological University of the 
+                Philippines I have basic knowldge in web page development 
+                I believe that my attained knowldge about web development will greatly
+                help me throughout my whole life. 
+            </p>
+        </div>
+    </main>
+</body>
+</html>
